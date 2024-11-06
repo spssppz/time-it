@@ -325,6 +325,8 @@ textarea.input {
   font-weight: 500;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .top-header__link_mail:not(:last-child) {
@@ -333,6 +335,11 @@ textarea.input {
 
 .top-header__link_phone:not(:last-child) {
   margin-right: 1.25rem;
+}
+
+.top-header__btn {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .bottom-header__container {
@@ -360,6 +367,8 @@ textarea.input {
           flex: 0 0 2.125rem;
   width: 2.125rem;
   height: 2.125rem;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .bottom-header__social:not(:last-child) {
@@ -388,6 +397,8 @@ textarea.input {
   font-weight: 600;
   font-size: 0.8125rem;
   text-transform: uppercase;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .icon-menu {
@@ -438,8 +449,8 @@ textarea.input {
 .footer__link {
   font-size: 1rem;
   font-weight: 500;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .footer__link_mail:not(:last-child) {
@@ -463,6 +474,8 @@ textarea.input {
           flex: 0 0 2.125rem;
   width: 2.125rem;
   height: 2.125rem;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .footer__social:not(:last-child) {
@@ -616,6 +629,8 @@ textarea.input {
   border: 0.0625rem solid #f6f7f8;
   font-size: 0;
   background: #ff1521;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .main-audit__btn-slider_next {
@@ -748,6 +763,8 @@ textarea.input {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .right-stock__btn:not(:last-child) {
@@ -842,6 +859,8 @@ textarea.input {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .form-audit-appliation__btn:not(:last-child) {
@@ -978,6 +997,8 @@ textarea.input {
   border: 0.0625rem solid #f6f7f8;
   font-size: 0;
   background: #ff1521;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .reviews__btn-slider_next {
@@ -1086,6 +1107,8 @@ textarea.input {
   padding: 1.5625rem 2.5rem;
   border-radius: 0.625rem;
   background: #ff1521;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .faq {
@@ -1122,6 +1145,30 @@ textarea.input {
   width: 100%;
   text-align: left;
   line-height: 1.25;
+  position: relative;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.faq__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 3.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: -0.625rem;
+  background: url("../img/spoller-decor.svg") 50%/cover no-repeat;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.faq__label._spoller-active::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .faq__body {
@@ -1186,6 +1233,8 @@ textarea.input {
   background-color: #fff;
   color: #2c2c2d;
   height: 4.25rem;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 @media (min-width: 61.99875em) {
@@ -2174,16 +2223,60 @@ textarea.input {
 
 @media (any-hover: hover) {
   .top-header__link:hover {
-    color: #414144;
+    opacity: 0.8;
+  }
+
+  .top-header__btn:hover {
+    opacity: 0.8;
+  }
+
+  .bottom-header__social:hover {
+    opacity: 0.8;
+  }
+
+  .menu__link:hover {
+    opacity: 0.8;
   }
 
   .footer__link:hover {
-    color: #414144;
+    opacity: 0.8;
+  }
+
+  .footer__social:hover {
+    opacity: 0.8;
   }
 
   .top-audit__btn:hover {
     background: #ff1521;
     color: #fff;
+  }
+
+  .main-audit__btn-slider:hover {
+    opacity: 0.8;
+  }
+
+  .right-stock__btn:hover {
+    opacity: 0.8;
+  }
+
+  .form-audit-appliation__btn:hover {
+    opacity: 0.8;
+  }
+
+  .reviews__btn-slider:hover {
+    opacity: 0.8;
+  }
+
+  .tariff__btn:hover {
+    opacity: 0.8;
+  }
+
+  .faq__label:hover {
+    opacity: 0.8;
+  }
+
+  .form-questions__btn:hover {
+    opacity: 0.8;
   }
 }
 
